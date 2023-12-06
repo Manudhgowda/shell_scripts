@@ -1,0 +1,7 @@
+#!/bin/bash
+EMP_NAME=manu
+EMP_ID=1234
+EMP_MOB=987654321
+echo " employee name is $EMP_NAME "
+echo " employee id is $EMP_ID "
+echo " employee mobile number is $EMP_MOB "
