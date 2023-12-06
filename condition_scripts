@@ -1,0 +1,11 @@
+if [ condition ]
+then
+  echo "statment"
+
+elif [ condition ]
+then
+  echo "statment"
+else
+   echo "statement"
+   
+fi
