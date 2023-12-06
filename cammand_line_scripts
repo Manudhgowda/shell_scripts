@@ -1,0 +1,10 @@
+#!/bin/bash 
+echo "Display employee name $1 "
+echo "Display emloyee id $2 "
+echo "Display employee location $3 "
+echo "Display employee state $4 "
+echo
+echo " number of arguments passed to script is ==> $# "
+echo " PID(processID) of the script is ==> $$ "
+echo " print all arguments i have passed to this script ==> $* "
+echo " Print the name of script which i am executing ==> $0 "
