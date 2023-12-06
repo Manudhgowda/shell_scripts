@@ -1,0 +1,12 @@
+#!/bin/bash
+
+services="httpd"
+for i in $services
+do
+ps -ef | grep -v  grep | grep $i 
+if [ $? == 0 ];
+then
+   echo "The $i process is running"
+ else
+    echo "The $i process  is stopped " | mail -s "$i process stopped" -r "sender email"  "Recipients email"
+fi
