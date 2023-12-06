@@ -1,0 +1,29 @@
+Various Possibilities of specifying Date and Time USING CRONTAB:
+---------------------------------------------------------------
+ # m h dom mon dow command 
+ - Every minute   ==> * * * * * 
+
+- Every 2 minutes ==>  */2 * * * * 
+       note: */2 means every 2nd minute 
+
+-  Every 3 minutes  ==> */3 * * * *
+
+- Every 1 hour  ==>  0 * * * * 
+
+- Every 2 hours   ==> 0 */2 * * * 
+
+- Execute only at 6'o clock,14'o clock and 22o clock
+   0 6,14,22 * * * 
+
+- Every Night at midnight   ==> 0 0 * * *
+
+- Every Sunday only once  ==>  0 0 * * SUN 0 0 * * 0
+
+- Only on week days  ==> 0 0 * * 1-5
+
+- Only on week-ends   ==> 0 0 * * 6,0 
+
+- Every month on 1st  ==>  0 0 1 * * 
+
+- Every Year Jan 1st   ==> 0 0 1 1 *
+
