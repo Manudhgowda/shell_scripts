@@ -1,0 +1,12 @@
+#!/bin/bash
+
+services="microservice1 microservice2 microservice3 microservice4"
+for i in $services
+do
+ps -ef | grep -v  grep | grep $i > /dev/null
+if [ $? == 0 ];
+then
+   echo "The $i is running"
+ else
+    echo "$i is stopped " | mail -s "$i process stopped" -r "sender email"  "Recipients email"
+fi
